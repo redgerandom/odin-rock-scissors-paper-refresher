@@ -1,0 +1,1 @@
+This project is a simple implementation of the classic game "Rock, Paper, Scissors." It allows a user to play against the computer, with multiple rounds to determine the overall winner. The game demonstrates basic programming concepts, including control flow, randomization, and user interaction.
