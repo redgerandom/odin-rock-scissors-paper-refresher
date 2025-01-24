@@ -11,26 +11,21 @@ function getComputerChoice() {
         return 'paper';
     } else {
         return 'scissors';
-        
     }
 }
+
 function getHumanChoice() {
-    
     let choice = prompt('Enter your choice: rock, paper, or scissors');
     const humanChoice = choice.toLowerCase();
-    // console.log(humanChoice);
     return humanChoice;
 }
 
 function showHands() {
-  console.log("cpu threw " + computerChoice)
-  console.log("you threw " + humanChoice);
-  
-    
+    console.log("cpu threw " + computerChoice);
+    console.log("you threw " + humanChoice);
 }
 
 showHands();
-
 
 function playRound(humanChoice, computerChoice) {
     if (computerChoice === humanChoice) {
@@ -48,6 +43,14 @@ function playRound(humanChoice, computerChoice) {
         console.log("You win!");
         humanScore++;
         return "You win!";
-               }}
+    }
+}
 
-               playRound(humanChoice, computerChoice);
+playRound(humanChoice, computerChoice);
+
+function scoreBoard(params) {
+    console.log(humanScore + " : " + computerScore);
+    
+    
+}
+scoreBoard()
