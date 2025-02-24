@@ -2,7 +2,9 @@ let humanScore = 0;
 let computerScore = 0; 
 let humanChoice = ""
 let computerChoice = ""
+let result = document.getElementById('result');
 
+result.innerText= scoreBoard()
 
 let rockButton = document.getElementById('rock');
 rockButton.addEventListener('click', function() {
@@ -10,7 +12,7 @@ rockButton.addEventListener('click', function() {
     computerChoice = getComputerChoice();
     showHands();
     playRound(humanChoice, computerChoice);
-    scoreBoard();
+    result.innerText= scoreBoard();
 });
 
 
@@ -22,7 +24,7 @@ paperButton.addEventListener('click', function() {
     computerChoice = getComputerChoice();
     showHands();
     playRound(humanChoice, computerChoice);
-    scoreBoard();
+    result.innerText= scoreBoard();
 }
 );      
 
@@ -33,7 +35,7 @@ scissorsButton.addEventListener('click', function() {
     computerChoice = getComputerChoice();
     showHands();
     playRound(humanChoice, computerChoice);
-    scoreBoard();
+    result.innerText= scoreBoard();
 }
 );                      
 
@@ -83,6 +85,7 @@ function playRound(humanChoice, computerChoice) {
     
     function scoreBoard() {
         console.log(humanScore + " : " + computerScore);
+        return humanScore + " : " + computerScore;
     }
 
     // function playgame() {
