@@ -1,7 +1,7 @@
 let humanScore = 0;
 let computerScore = 0; 
-// let humanChoice = getHumanChoice();
-// let computerChoice = getComputerChoice();
+let humanChoice = getHumanChoice();
+let computerChoice = getComputerChoice();
 
 function getComputerChoice() {
     const choice = Math.floor(Math.random() * 3);
@@ -52,7 +52,7 @@ function playRound(humanChoice, computerChoice) {
     }
 
     function playgame() {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 1; i < 5; i++) {
             humanChoice = getHumanChoice();
             computerChoice = getComputerChoice();
             showHands();
